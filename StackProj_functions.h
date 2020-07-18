@@ -8,14 +8,14 @@ using namespace std;
 
 // Global Variables - constant menu choices
 const int PUSH_NOUN = 1,
-		  POP_NOUN = 2,
-		  PUSH_VERB = 3,
-		  POP_VERB = 4,
-		  CONCATENATE = 5,
-		  ADD_S = 6,
-		  DISPLAY_BOTH = 7,
-		  MAKE_STORY = 8,
-		  EXIT_PROGRAM = 9;
+	  POP_NOUN = 2,
+	  PUSH_VERB = 3,
+	  POP_VERB = 4,
+	  CONCATENATE = 5,
+	  ADD_S = 6,
+	  DISPLAY_BOTH = 7,
+	  MAKE_STORY = 8,
+	  EXIT_PROGRAM = 9;
 
 // Input Functions
 void menu(int&);
