@@ -1,7 +1,3 @@
-// Steven Quintana
-// Ch.19 Assignment - Stack Project
-// July 16, 2020
-
 // Specification file for the DynIntStack class.
 
 #ifndef DYNAMICSTACK_H
