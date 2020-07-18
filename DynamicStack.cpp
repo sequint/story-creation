@@ -10,9 +10,9 @@
 using namespace std;
 
 //******************************************************************************************
-// Destructor Function																	   *
-//																						   *
-// This function deletes every node from the stack.										   *
+// Destructor Function									   *
+//											   *
+// This function deletes every node from the stack.					   *
 //******************************************************************************************
 
 DynamicStack::~DynamicStack()
@@ -33,9 +33,9 @@ DynamicStack::~DynamicStack()
 }
 
 //******************************************************************************************
-// push Function																		   *
-//																						   *
-// This function pushes the passed value onto the stack.								   *
+// push Function									   *
+//											   *
+// This function pushes the passed value onto the stack.				   *
 //******************************************************************************************
 
 void DynamicStack::push(string value)
@@ -68,8 +68,8 @@ void DynamicStack::push(string value)
 }
 
 //******************************************************************************************
-// pop Function																			   *
-//																						   *
+// pop Function										   *
+//											   *
 // This function pops out the top value of the stack, then makes a copy of the variable.   *
 //******************************************************************************************
 
@@ -102,18 +102,18 @@ void DynamicStack::pop(string& value)
 }
 
 //******************************************************************************************
-// concatenate Function																	   *
-//																						   *
+// concatenate Function									   *
+//											   *
 // This function checks if there are two at least two nodes in a stack, then combines the  *
-// two values and makes that value the new top node.									   *
+// two values and makes that value the new top node.					   *
 //******************************************************************************************
 
 void DynamicStack::concatenate(string& value)
 {
 	StackNode* nextNode = top->next;  // To traverse the stack.
 	StackNode* newNode = nullptr;     // Points to a new node.
-	string newValue = "";			  // To hold the new concatenated value.
-	string tempValue;			  // To hold a temporary value if newValue is longer than 10 characters.
+	string newValue = "";		  // To hold the new concatenated value.
+	string tempValue;		  // To hold a temporary value if newValue is longer than 10 characters.
 
 	// Allocate a new node and store the value there.
 	newNode = new StackNode;
@@ -168,11 +168,11 @@ void DynamicStack::concatenate(string& value)
 }
 
 //******************************************************************************************
-// addS Function																		   *
-//																						   *
+// addS Function									   *
+//											   *
 // This function adds an 's' character to the end of the string value in the top node.	   *
 // If the value is already 10 characters long, the string is truncated to accomidate the   *
-// new 's' character.																	   *
+// new 's' character.									   *
 //******************************************************************************************
 
 void DynamicStack::addS(bool& isTen)
@@ -208,9 +208,9 @@ void DynamicStack::addS(bool& isTen)
 }
 
 //******************************************************************************************
-// displayStack Function																   *
-//																						   *
-// This function traverses through a stack and displays each node in the stack.			   *
+// displayStack Function								   *
+//											   *
+// This function traverses through a stack and displays each node in the stack.		   *
 //******************************************************************************************
 
 void DynamicStack::displayStack()
@@ -229,16 +229,16 @@ void DynamicStack::displayStack()
 }
 
 //******************************************************************************************
-// printNextValue Function																   *
-//																						   *
+// printNextValue Function								   *
+//											   *
 // This function prints the top node in the stack, then pops it out and assigned the next  *
-// node as the top of the stack.														   *
+// node as the top of the stack.							   *
 //******************************************************************************************
 
 string DynamicStack::printNextValue()
 {
 	StackNode* nextNode = nullptr;  // To point to the next node in the stack.
-	string tempValue;				// Variable to temporarily hold the top nodes value.
+	string tempValue;		// Variable to temporarily hold the top nodes value.
 
 	// Store the top nodes value into tempValue.
 	tempValue = top->value;
@@ -256,8 +256,8 @@ string DynamicStack::printNextValue()
 }
 
 //******************************************************************************************
-// isEmpty Function																		   *
-//																						   *
+// isEmpty Function									   *
+//											   *
 // This function returns true if the top node of a stack is null, and false if it is not.  *
 //******************************************************************************************
 
@@ -274,9 +274,9 @@ bool DynamicStack::isEmpty()
 }
 
 //******************************************************************************************
-// twoValues Function																	   *
-//																						   *
-// This function returns true if there are two values in a stack, and false if not.		   *
+// twoValues Function									   *
+//											   *
+// This function returns true if there are two values in a stack, and false if not.	   *
 //******************************************************************************************
 
 bool DynamicStack::twoValues()
@@ -292,15 +292,15 @@ bool DynamicStack::twoValues()
 }
 
 //******************************************************************************************
-// stackSize Function																	   *
-//																						   *
+// stackSize Function									   *
+//											   *
 // This function traverses through a stack and returns the number of nodes in the stack.   *
 //******************************************************************************************
 
 int DynamicStack::stackSize()
 {
 	StackNode* nodePtr = top;   // To point to the top node.
-	int size = 0;				// Variable to hold the size of the stack.
+	int size = 0;		    // Variable to hold the size of the stack.
 
 	// If the stack is empty, return the size at '0'.
 	if (isEmpty())
