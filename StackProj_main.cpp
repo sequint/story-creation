@@ -1,7 +1,3 @@
-// Steven Quintana
-// Ch.19 Assignment - Stack Project
-// July 16, 2020
-
 // Main function file for Stack Project.
 
 #include <iostream>
