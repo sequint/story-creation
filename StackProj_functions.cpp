@@ -9,15 +9,15 @@ using namespace std;
 
 
 //*******************************************************
-//					 INPUT FUNCTIONS					*
+//		      INPUT FUNCTIONS			*
 //*******************************************************
 
 
 //*******************************************************************************************
-// menu Function																			*
-//																							*
+// menu Function									    *
+//											    *
 // This function gives the user a list of numbered choices, gets the choice from the user,  *
-// then validates that the choice is valid.													*
+// then validates that the choice is valid.						    *
 //*******************************************************************************************
 
 void menu(int& choice)
@@ -41,10 +41,10 @@ void menu(int& choice)
 }
 
 //*******************************************************************************************
-// pushValue Function																		*
-//																							*
-// This function takes a DynamicStack object as an argument an pushes a value from the		*
-// user onto that stack.																	*
+// pushValue Function									    *
+//											    *
+// This function takes a DynamicStack object as an argument an pushes a value from the	    *
+// user onto that stack.								    *
 //*******************************************************************************************
 
 void pushValue(DynamicStack& stack, string& stackSpecifier)
@@ -83,9 +83,9 @@ void pushValue(DynamicStack& stack, string& stackSpecifier)
 }
 
 //*******************************************************************************************
-// popValue Function																		*
-//																							*
-// This function pops out the top value of a stack.											*
+// popValue Function									    *
+//											    *
+// This function pops out the top value of a stack.					    *
 //*******************************************************************************************
 
 void popValue(DynamicStack& stack, string& stackSpecifier)
@@ -111,10 +111,10 @@ void popValue(DynamicStack& stack, string& stackSpecifier)
 }
 
 //*******************************************************************************************
-// concateValues Function																	*
-//																							*
-// This function performs a high level check of whether the stack has two nodes or not,		*
-// and prints an error message if not. If the stack has two, it then calls concatenate.		*
+// concateValues Function								    *
+//											    *
+// This function performs a high level check of whether the stack has two nodes or not,	    *
+// and prints an error message if not. If the stack has two, it then calls concatenate.	    *
 //*******************************************************************************************
 
 void concateValues(DynamicStack& stack, string& stackSpecifier)
@@ -138,10 +138,10 @@ void concateValues(DynamicStack& stack, string& stackSpecifier)
 }
 
 //*******************************************************************************************
-// addSVal Function																			*
-//																							*
-// This function check if the top node in a stack is empty, then add an 's' charater to		*
-// the end of it's value variable.															*
+// addSVal Function									    *
+//											    *
+// This function check if the top node in a stack is empty, then add an 's' charater to	    *
+// the end of it's value variable.							    *
 //*******************************************************************************************
 
 void addSVal(DynamicStack& stack, string& stackSpecifier)
@@ -175,15 +175,15 @@ void addSVal(DynamicStack& stack, string& stackSpecifier)
 
 
 //*******************************************************
-//					 OUTPUT FUNCTIONS					*
+//		     OUTPUT FUNCTIONS			*
 //*******************************************************
 
 
 //*******************************************************************************************
-// displayStacks Function																	*
-//																							*
-// This function display two stacks in colomns next to each other with the top value		*
-// display on the top.																		*
+// displayStacks Function								    *
+//											    *
+// This function display two stacks in colomns next to each other with the top value	    *
+// display on the top.									    *
 //*******************************************************************************************
 
 void displayStacks(DynamicStack& stack1, DynamicStack& stack2, string& stackSpec1, string& stackSpec2)
@@ -220,10 +220,10 @@ void displayStacks(DynamicStack& stack1, DynamicStack& stack2, string& stackSpec
 }
 
 //*******************************************************************************************
-// printStory Function																		*
-//																							*
-// This function prints out a story using using the top nodes of the noun and verb stack	*
-// and popping through them.																*
+// printStory Function									    *
+//											    *
+// This function prints out a story using using the top nodes of the noun and verb stack    *
+// and popping through them.								    *
 //*******************************************************************************************
 
 void printStory(DynamicStack& stack1, DynamicStack& stack2)
@@ -262,9 +262,9 @@ void printStory(DynamicStack& stack1, DynamicStack& stack2)
 }
 
 //*******************************************************************************************
-// goodbyeMessage Function																	*
-//																							*
-// This function prints a goodbye message used at the exit of the program. 					*
+// goodbyeMessage Function								    *
+//											    *
+// This function prints a goodbye message used at the exit of the program. 		    *
 //*******************************************************************************************
 
 void goodbyeMessage()
@@ -273,9 +273,9 @@ void goodbyeMessage()
 }
 
 //*******************************************************************************************
-// menuChoiceError Function																	*
-//																							*
-// This function prints an error message to inform user that their selection is not valid.	*
+// menuChoiceError Function								    *
+//											    *
+// This function prints an error message to inform user that their selection is not valid.  *
 //*******************************************************************************************
 
 void menuChoiceError(int& choice)
@@ -286,15 +286,15 @@ void menuChoiceError(int& choice)
 
 
 //*******************************************************
-//				INPUT VALIDATION FUNCTIONS				*
+//		INPUT VALIDATION FUNCTIONS		*
 //*******************************************************
 
 
 //*******************************************************************************************
-// isInteger Function																		*
-//																							*
-// This functions takes checks if the input is an integer, and prompts for another input	*
-// if it is not.																			*
+// isInteger Function									    *
+//											    *
+// This functions takes checks if the input is an integer, and prompts for another input    *
+// if it is not.									    *
 //*******************************************************************************************
 
 void isInteger(int& input)
