@@ -8,12 +8,12 @@ using namespace std;
 
 int main()
 {
-	DynamicStack noun;			 // The noun stack.
-	DynamicStack verb;			 // The verb stack.
+	DynamicStack noun;  	// The noun stack.
+	DynamicStack verb;  	// The verb stack.
 
-	int choice;					 // Variable that holds the menu choice.
-	string nounSp = "Noun",		 // Variable that is used for noun print message specification.
-		   verbSp = "Verb";		 // Variable that is used for verb print message specification.
+	int choice;		 // Variable that holds the menu choice.
+	string nounSp = "Noun",	 // Variable that is used for noun print message specification.
+	       verbSp = "Verb";  // Variable that is used for verb print message specification.
 
 	// While the choice is not EXIT_PROGRAM, continue printing the menu.
 	do
